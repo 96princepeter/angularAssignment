@@ -1,0 +1,21 @@
+<!-- <div class="container " style="margin-top: 10px;">
+  <div class="card">
+    <h5 class="card-header text-center">{{product.name}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">Cost {{product.cost}}</h5>
+      <p class="card-text">[index] </p>
+      <button (click)="itemDetails()" class="btn btn-primary">Details</button>
+    </div>
+  </div>
+</div> -->
+
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ product.name }}</h4>
+    <p class="list-group-item-text"> RS {{ product.cost }}</p>
+  </div>
+</a>

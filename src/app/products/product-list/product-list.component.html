@@ -1,0 +1,9 @@
+<div class="row-3">
+  <div class="col-12">
+    <h3>Products</h3>
+    <button class="btn btn-primary" (click)="newProduct()">New Product</button>
+    <div class="m3">
+      <app-product *ngFor="let item of products; let i = index " [product]="item" [index]="i"></app-product>
+    </div>    
+  </div>
+</div>
